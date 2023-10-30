@@ -10,4 +10,10 @@ app.get('/api/data', (req, res) => {
   // 이 API는 "데이터 창고"와 같습니다. 데이터를 요청하면 창고에서 데이터를 꺼내 반환합니다.
   const data = {message: 'Hello, Ajax! This is a data from the server.'}
   res.json(data);
-})
+});
+
+// 서버를 3000번 포트에서 실행
+const port = 3000;
+app.listen(port, () => {
+  console.log('http://localhost:3000/')
+});
