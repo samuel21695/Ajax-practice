@@ -19,3 +19,6 @@ xhr.onload = () => {
     console.error('요청 실패');
   }
 };
+
+// 요청 보내기
+xhr.send();
